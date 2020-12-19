@@ -31,7 +31,7 @@ public class ContactUsFragment extends Fragment {
 
    SharedPreferences preferences;
     String myPref = "Save", SIZE = "size", FONT_NAZANIN = "nazanin"
-            , FONT_CHILD = "child", FONT_TITR = "titr",FONT_MJ = "mj";
+            , FONT_CHILD = "child", FONT_TITR = "titr";
     private static final int BASE_FONT_SIZE = 16;
 
     public ContactUsFragment() {
@@ -100,7 +100,7 @@ public class ContactUsFragment extends Fragment {
         Typeface typeface_nazanin = Typeface.createFromAsset(this.getActivity().getAssets(),"fonts/BNAZANB.TTF");
         Typeface typeface_titr = Typeface.createFromAsset(this.getActivity().getAssets(),"fonts/BTITRBD.TTF");
         Typeface typeface_child = Typeface.createFromAsset(this.getActivity().getAssets(),"fonts/BKOODAKO.TTF");
-        Typeface typeface_mj_Nil = Typeface.createFromAsset(this.getActivity().getAssets(),"fonts/Mj_Nil 3.ttf");
+
 
         preferences = Objects.requireNonNull(this.getActivity()).getSharedPreferences(myPref,0);
         @SuppressLint("CommitPrefEdits") SharedPreferences.Editor editor = preferences.edit();
@@ -116,10 +116,6 @@ public class ContactUsFragment extends Fragment {
             binding.txtEmailAddress.setTypeface(typeface_child);
             binding.txtPhone.setTypeface(typeface_child);
             binding.btnNewNote.setTypeface(typeface_child);
-        }else if (preferences.getBoolean(FONT_MJ,false)){
-            binding.txtEmailAddress.setTypeface(typeface_mj_Nil);
-            binding.txtPhone.setTypeface(typeface_mj_Nil);
-            binding.btnNewNote.setTypeface(typeface_mj_Nil);
         }else if (preferences.getBoolean(FONT_TITR,false)){
             binding.txtEmailAddress.setTypeface(typeface_titr);
             binding.txtPhone.setTypeface(typeface_titr);

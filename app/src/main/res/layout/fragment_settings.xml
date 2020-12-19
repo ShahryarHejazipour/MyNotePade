@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".views.settingFragment.SettingsFragment">
 
@@ -34,6 +35,8 @@
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:textColor="@color/phirooz"
+        android:textStyle="bold"
         android:id="@+id/txt_font_size_change"
         android:layout_below="@id/toolbar2"
         android:layout_width="wrap_content"
@@ -53,6 +56,7 @@
         android:layout_marginTop="@dimen/radius_8"
         >
         <RelativeLayout
+            android:background="@drawable/ic_alternating_arrowhead"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -75,6 +79,8 @@
                 android:thumb="@drawable/thumb_seekbar"/>
 
             <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/phirooz"
+                android:textStyle="bold"
                 android:id="@+id/txt_font_change"
                 android:layout_below="@id/seekBar_font_size"
                 android:layout_width="wrap_content"
@@ -97,26 +103,27 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/radio_nazanin"
                     android:text="@string/nazanin"
+                    android:textColor="@color/phirooz"
+                    android:textStyle="bold"
                     android:checked="true"
                     android:layoutDirection="ltr"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/radio_child"
+                    android:textColor="@color/phirooz"
+                    android:textStyle="bold"
                     android:text="@string/child"
                     android:layoutDirection="ltr"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/radio_titr"
+                    android:textColor="@color/phirooz"
+                    android:textStyle="bold"
                     android:text="@string/titr"
                     android:layoutDirection="ltr"/>
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/radio_mj"
-                    android:text="@string/nile"
-                    android:layoutDirection="ltr"/>
+
 
             </RadioGroup>
             <androidx.appcompat.widget.AppCompatButton

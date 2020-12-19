@@ -49,4 +49,7 @@
     <string name="nile">NILE</string>
     <string name="font_style">Font Style</string>
     <string name="no_notes_for_delete">There is no any Notes to Delete !</string>
+    <string name="Click_on_web">For Visit Us Please Click on this Web address : </string>
+    <string name="click_address">For find us Please Touch Below Address :</string>
+    <string name="click_on_email">For Sending Email to us Please Touch Below Email:</string>
 </resources>

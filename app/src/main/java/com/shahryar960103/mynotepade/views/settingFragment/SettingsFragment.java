@@ -25,7 +25,7 @@ public class SettingsFragment extends Fragment {
 
    SharedPreferences sharedPreferences;
    String myPref = "Save", SIZE = "size", FONT_NAZANIN = "nazanin"
-           , FONT_CHILD = "child", FONT_TITR = "titr",FONT_MJ = "mj";
+           , FONT_CHILD = "child", FONT_TITR = "titr";
 
 
     public SettingsFragment() {
@@ -99,7 +99,7 @@ public class SettingsFragment extends Fragment {
         Typeface typeface_nazanin = Typeface.createFromAsset(this.getActivity().getAssets(),"fonts/BNAZANB.TTF");
         Typeface typeface_titr = Typeface.createFromAsset(this.getActivity().getAssets(),"fonts/BTITRBD.TTF");
         Typeface typeface_child = Typeface.createFromAsset(this.getActivity().getAssets(),"fonts/BKOODAKO.TTF");
-        Typeface typeface_mj_Nil = Typeface.createFromAsset(this.getActivity().getAssets(),"fonts/Mj_Nil 3.ttf");
+
 
         binding.btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,28 +113,26 @@ public class SettingsFragment extends Fragment {
                     binding.txtFontSize.setTypeface(typeface_child);
                 }else if (binding.radioTitr.isChecked()){
                     binding.txtFontSize.setTypeface(typeface_titr);
-                }else if (binding.radioMj.isChecked()){
-                    binding.txtFontSize.setTypeface(typeface_mj_Nil);
                 }
 
                 //saving radio button checking condition in shared preferences
                 editor.putBoolean(FONT_NAZANIN,binding.radioNazanin.isChecked());
                 editor.putBoolean(FONT_CHILD,binding.radioChild.isChecked());
                 editor.putBoolean(FONT_TITR,binding.radioTitr.isChecked());
-                editor.putBoolean(FONT_MJ,binding.radioMj.isChecked());
+
                 editor.apply();
 
             }
         });
 
         if (sharedPreferences.contains(FONT_TITR)&&sharedPreferences.contains(FONT_CHILD)
-                &&sharedPreferences.contains(FONT_NAZANIN)&&sharedPreferences.contains(FONT_MJ)){
+                &&sharedPreferences.contains(FONT_NAZANIN)){
 
             //for stabling checked radio button
             binding.radioNazanin.setChecked(sharedPreferences.getBoolean(FONT_NAZANIN,false));
             binding.radioChild.setChecked(sharedPreferences.getBoolean(FONT_CHILD,false));
             binding.radioTitr.setChecked(sharedPreferences.getBoolean(FONT_TITR,false));
-            binding.radioMj.setChecked(sharedPreferences.getBoolean(FONT_MJ,false));
+
 
 
             //for stabling fonts when fragment is in onResume
@@ -144,8 +142,6 @@ public class SettingsFragment extends Fragment {
                 binding.txtFontSize.setTypeface(typeface_child);
             }else if (binding.radioTitr.isChecked()){
                 binding.txtFontSize.setTypeface(typeface_titr);
-            }else if (binding.radioMj.isChecked()){
-                binding.txtFontSize.setTypeface(typeface_mj_Nil);
             }
 
         }

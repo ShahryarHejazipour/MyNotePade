@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/ic_alternating_arrowhead"
     tools:context=".EditProfileFragment">
 
     <androidx.appcompat.widget.Toolbar
@@ -39,6 +40,8 @@
         android:layout_height="wrap_content"
         android:text="@string/select_profile_s_image"
         android:layout_below="@id/toolbar2"
+        android:textColor="@color/phirooz"
+        android:textStyle="bold"
         android:layout_marginTop="@dimen/margin_20"
         android:layout_marginLeft="@dimen/margin_20"/>
 
@@ -58,6 +61,8 @@
         android:layout_height="wrap_content"
         android:text="@string/enter_your_username"
         android:layout_below="@id/image_profile"
+        android:textColor="@color/phirooz"
+        android:textStyle="bold"
         android:layout_marginTop="@dimen/margin_70"
         android:layout_marginLeft="@dimen/margin_20"/>
 

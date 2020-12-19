@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/ic_alternating_arrowhead"
     tools:context=".views.contactUsFragment.ContactUsFragment">
 
 
@@ -34,24 +35,53 @@
     </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lbl_web_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar2"
+        android:layout_marginTop="@dimen/margin_150"
+        android:text="@string/click_on_email"
+        android:textStyle="bold"
+        android:textColor="@color/phirooz"
+        android:layout_marginLeft="@dimen/margin_16"
+        />
+
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:layout_below="@id/toolbar2"
+        android:layout_below="@id/lbl_web_address"
         android:id="@+id/txt_email_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textWebEmailAddress"
         android:text="@string/test_gmail_com"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/margin_150"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_20"
         />
+
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lbl_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/txt_email_address"
+        android:layout_marginTop="@dimen/margin_70"
+        android:text="@string/click_on_email"
+        android:textStyle="bold"
+        android:textColor="@color/phirooz"
+        android:layout_marginLeft="@dimen/margin_16"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_below="@id/lbl_phone_number"
         android:id="@+id/txt_phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textWebEmailAddress"
         android:text="@string/phone_number"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/margin_20"
         />
@@ -62,9 +92,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/add_a_new_note"
-        android:layout_below="@id/txt_email_address"
+        android:layout_below="@id/txt_phone"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/margin_150"
+        android:layout_marginTop="@dimen/margin_70"
         />
 
 

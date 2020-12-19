@@ -35,7 +35,7 @@ public class NoteAdapter extends RecyclerView.Adapter {
     RowNoteBinding binding;
     SharedPreferences sharedPreferences;
     String myPref = "Save", SIZE = "size", FONT_NAZANIN = "nazanin"
-            , FONT_CHILD = "child", FONT_TITR = "titr",FONT_MJ = "mj";
+            , FONT_CHILD = "child", FONT_TITR = "titr";
     private static final int BASE_FONT_SIZE = 16;
 
     Context context;
@@ -143,7 +143,7 @@ public class NoteAdapter extends RecyclerView.Adapter {
         Typeface typeface_nazanin = Typeface.createFromAsset(context.getAssets(),"fonts/BNAZANB.TTF");
         Typeface typeface_titr = Typeface.createFromAsset(context.getAssets(),"fonts/BTITRBD.TTF");
         Typeface typeface_child = Typeface.createFromAsset(context.getAssets(),"fonts/BKOODAKO.TTF");
-        Typeface typeface_mj_Nil = Typeface.createFromAsset(context.getAssets(),"fonts/Mj_Nil 3.ttf");
+
 
         sharedPreferences = context.getSharedPreferences(myPref,0);
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -165,15 +165,6 @@ public class NoteAdapter extends RecyclerView.Adapter {
             binding.txtDescription.setTypeface(typeface_child);
             binding.txtTitle.setTypeface(typeface_child);
             binding.lblTime.setTypeface(typeface_child);
-        }else if (sharedPreferences.getBoolean(FONT_MJ,false)){
-            binding.lblDate.setTypeface(typeface_mj_Nil);
-            binding.txtDate.setTypeface(typeface_mj_Nil);
-            binding.lblTime.setTypeface(typeface_mj_Nil);
-            binding.txtTime.setTypeface(typeface_mj_Nil);
-            binding.lblDescription.setTypeface(typeface_mj_Nil);
-            binding.txtDescription.setTypeface(typeface_mj_Nil);
-            binding.txtTitle.setTypeface(typeface_mj_Nil);
-            binding.lblTime.setTypeface(typeface_mj_Nil);
         }else if (sharedPreferences.getBoolean(FONT_TITR,false)){
             binding.lblDate.setTypeface(typeface_titr);
             binding.txtDate.setTypeface(typeface_titr);

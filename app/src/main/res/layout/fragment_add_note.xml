@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ic_alternating_arrowhead"
     tools:context=".views.addNoteFragment.AddNoteFragment">
 
 
@@ -47,6 +48,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar2"
+        android:textColor="@color/phirooz"
+        android:textStyle="bold"
         android:text="@string/please_wright_your_note_here"
         android:layout_centerInParent="true"
         android:layout_marginTop="@dimen/margin_20"

@@ -23,7 +23,7 @@ public class AboutUsFragment extends Fragment {
         FragmentAboutUsBinding binding;
         SharedPreferences sharedPreferences;
     String myPref = "Save", SIZE = "size", FONT_NAZANIN = "nazanin"
-            , FONT_CHILD = "child", FONT_TITR = "titr",FONT_MJ = "mj";
+            , FONT_CHILD = "child", FONT_TITR = "titr";
     private static final int BASE_FONT_SIZE = 16;
 
     public AboutUsFragment() {
@@ -85,7 +85,7 @@ public class AboutUsFragment extends Fragment {
         Typeface typeface_nazanin = Typeface.createFromAsset(this.getActivity().getAssets(),"fonts/BNAZANB.TTF");
         Typeface typeface_titr = Typeface.createFromAsset(this.getActivity().getAssets(),"fonts/BTITRBD.TTF");
         Typeface typeface_child = Typeface.createFromAsset(this.getActivity().getAssets(),"fonts/BKOODAKO.TTF");
-        Typeface typeface_mj_Nil = Typeface.createFromAsset(this.getActivity().getAssets(),"fonts/Mj_Nil 3.ttf");
+
 
         sharedPreferences = this.getActivity().getSharedPreferences(myPref,0);
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -100,10 +100,6 @@ public class AboutUsFragment extends Fragment {
             binding.txtWebAddress.setTypeface(typeface_child);
             binding.txtAddress.setTypeface(typeface_child);
             binding.btnNewNote.setTypeface(typeface_child);
-        }else if (sharedPreferences.getBoolean(FONT_MJ,false)){
-            binding.txtWebAddress.setTypeface(typeface_mj_Nil);
-            binding.txtAddress.setTypeface(typeface_mj_Nil);
-            binding.btnNewNote.setTypeface(typeface_mj_Nil);
         }else if (sharedPreferences.getBoolean(FONT_TITR,false)){
             binding.txtWebAddress.setTypeface(typeface_titr);
             binding.txtAddress.setTypeface(typeface_titr);
