@@ -50,4 +50,9 @@
     <string name="font_style">فونت</string>
     <string name="no_notes_for_delete">یادداشتی برای حذف کردن وجود ندارد!</string>
     <string name="click_on_email">For Sending Email to us Please Touch Below Email:</string>
+    <string name="for_contact_with_us_please_touch_below_phone_number">For Contact with us Please Touch Below Phone Number :</string>
+    <string name="date_btn">Date</string>
+    <string name="time_btn">Time</string>
+    <string name="Click_on_web">For Visit Us Please Click on this Web address : </string>
+    <string name="click_address">For find us Please Touch Below Address :</string>
 </resources>

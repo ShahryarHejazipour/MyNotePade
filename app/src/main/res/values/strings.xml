@@ -10,11 +10,11 @@
     <string name="share_app">Share App</string>
     <string name="open">open</string>
     <string name="close">close</string>
-    <string name="title">Title</string>
-    <string name="description">Description</string>
-    <string name="date">Date</string>
-    <string name="time">Time</string>
-    <string name="save_note">Save Note</string>
+    <string name="title">Title : </string>
+    <string name="description">Description : </string>
+    <string name="date">Date : </string>
+    <string name="time">Time : </string>
+    <string name="save_note">save note</string>
     <string name="please_wright_your_note_here">Please Wright and Save Your Note Here</string>
     <string name="adding_note_successfully">The Note was added successfully !</string>
     <string name="adding_note_failed">Error in Saving Note, Please try again!</string>
@@ -52,4 +52,7 @@
     <string name="Click_on_web">For Visit Us Please Click on this Web address : </string>
     <string name="click_address">For find us Please Touch Below Address :</string>
     <string name="click_on_email">For Sending Email to us Please Touch Below Email:</string>
+    <string name="for_contact_with_us_please_touch_below_phone_number">For Contact with us Please Touch Below Phone Number :</string>
+    <string name="date_btn">date</string>
+    <string name="time_btn">time</string>
 </resources>

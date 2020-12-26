@@ -6,14 +6,17 @@
     <item
         android:id="@+id/item_share"
         android:title="@string/share_app"
+        android:iconTint="@color/phirooz"
         android:icon="@drawable/ic_baseline_share_24"/>
     <item
         android:id="@+id/item_settings"
         android:title="@string/setting"
+
         android:icon="@drawable/ic_baseline_settings_24"/>
     <item
         android:id="@+id/item_exit"
         android:title="@string/exit"
+        android:iconTint="@color/phirooz"
         android:icon="@drawable/ic_baseline_exit_to_app_24"/>
 
 </menu>

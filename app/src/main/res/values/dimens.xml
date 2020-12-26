@@ -10,4 +10,5 @@
     <dimen name="txt_size_20">20sp</dimen>
     <dimen name="radius_8">8dp</dimen>
     <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="margin_10">10dp</dimen>
 </resources>

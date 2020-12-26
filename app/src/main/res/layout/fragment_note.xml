@@ -13,7 +13,7 @@
         android:id="@+id/toolbar2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@drawable/toolbar_shape"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +37,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/margin_20"
                 />
 
 
@@ -53,6 +55,9 @@
         android:layout_below="@id/toolbar2"
         android:layout_marginLeft="@dimen/margin_16"
         android:layout_marginTop="@dimen/margin_16"
+        android:textStyle="bold"
+        android:textColor="@color/phirooz"
+        android:textSize="@dimen/margin_16"
         />
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/txt_time"
@@ -61,6 +66,9 @@
         android:layout_below="@id/txt_date"
         android:layout_marginLeft="@dimen/margin_16"
         android:layout_marginTop="@dimen/margin_16"
+        android:textStyle="bold"
+        android:textSize="@dimen/margin_16"
+        android:textColor="@color/phirooz"
         />
     <androidx.core.widget.NestedScrollView
         android:layout_below="@id/txt_time"

@@ -15,7 +15,7 @@
         android:id="@+id/toolbar2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@drawable/toolbar_shape"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,6 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/edt_txt_title"
+            android:background="@drawable/edt_shape"
             android:hint="@string/title"/>
 
 
@@ -88,6 +89,7 @@
             android:layout_height="match_parent"
             android:id="@+id/edt_txt_description"
             android:hint="@string/description"
+            android:background="@drawable/edt_shape"
             />
 
 
@@ -95,7 +97,7 @@
 
     <RelativeLayout
         android:layout_below="@+id/edt_txt_layout1"
-        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true">
@@ -103,27 +105,38 @@
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/date"
+            android:text="@string/date_btn"
             android:id="@+id/btn_date"
-            android:textSize="@dimen/btn_tex_size"
+            android:padding="@dimen/radius_8"
+            android:textAllCaps="false"
+            android:autoSizeTextType="uniform"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_shape"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/time"
+            android:text="@string/time_btn"
             android:id="@+id/btn_time"
             android:layout_marginLeft="@dimen/margin_150"
-            android:textSize="@dimen/btn_tex_size"
+            android:background="@drawable/btn_shape"
+            android:padding="@dimen/radius_8"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
             android:layout_toRightOf="@id/btn_date"/>
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/save_note"
             android:id="@+id/btn_save"
+            android:padding="@dimen/radius_8"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_shape"
+            android:textColor="@color/white"
             android:layout_below="@id/btn_time"
             android:layout_centerInParent="true"
-            android:layout_marginTop="@dimen/margin_70"
-            android:textSize="@dimen/btn_tex_size"
+            android:layout_marginTop="50dp"
+
             />
 
 

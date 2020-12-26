@@ -1,10 +1,13 @@
 package com.shahryar960103.mynotepade;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavDirections;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import com.shahryar960103.mynotepade.config.MyApplication;
 import com.shahryar960103.mynotepade.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,5 +25,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+        startActivity(intent);
+
+        super.onBackPressed();
     }
 }
