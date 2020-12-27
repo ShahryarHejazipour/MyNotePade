@@ -9,7 +9,7 @@
        android:angle="180"
        />
    <corners
-      android:radius="@dimen/radius_8"
+      android:radius="@dimen/margin_16"
 
       />
 

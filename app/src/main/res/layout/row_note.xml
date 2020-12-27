@@ -145,7 +145,7 @@
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentRight="true"
                     app:srcCompat="@drawable/ic_baseline_delete_24"
-                    android:tint="#686363"
+                    android:tint="@color/phirooz"
                     android:layout_margin="@dimen/margin_16"/>
 
                 <androidx.appcompat.widget.AppCompatImageView
@@ -155,7 +155,7 @@
                     android:layout_alignParentBottom="true"
                     android:layout_toLeftOf="@id/img_delete"
                     app:srcCompat="@drawable/ic_baseline_share_24"
-                    android:tint="#686363"
+                    android:tint="@color/phirooz"
                     android:layout_margin="@dimen/margin_16"/>
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/img_edit"
@@ -164,7 +164,7 @@
                     android:layout_alignParentBottom="true"
                     android:layout_toLeftOf="@id/img_share"
                     app:srcCompat="@drawable/ic_baseline_edit_24"
-                    android:tint="#686363"
+                    android:tint="@color/phirooz"
                     android:layout_margin="@dimen/margin_16"/>
 
 

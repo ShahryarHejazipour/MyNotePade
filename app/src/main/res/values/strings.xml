@@ -23,7 +23,7 @@
     <string name="add_a_new_note">Add a new Note</string>
     <string name="https_android_learn_ir">https://android-learn.ir</string>
     <string name="address">تهران میدان ولی عصر خیابان شقایق کوچه سوم پلاک ۵ طبقه ۲ واحد ۲۱</string>
-    <string name="phone_number">021-88946636</string>
+    <string name="phone_number">021–88946636</string>
     <string name="font_changing">Font Size</string>
     <string name="font_size">Example Text</string>
     <string name="edit_profile">Edit Profile</string>
@@ -35,9 +35,9 @@
     <string name="no">No</string>
     <string name="ask_for_delete">Do you want to Delete All Notes ?</string>
     <string name="ask_for_delete_one_note">Are You Sure for Delete This Note ?</string>
-    <string name="deleting_this_note">Deleting This Note...</string>
-    <string name="deleting_all_notes">Deleting All Your Notes...</string>
-    <string name="select_profile_image">Select Profile Image...</string>
+    <string name="deleting_this_note">Deleting This Note…</string>
+    <string name="deleting_all_notes">Deleting All Your Notes…</string>
+    <string name="select_profile_image">Select Profile Image…</string>
     <string name="where_select_profile_image">Where You want to select Profile Image?</string>
     <string name="camera">Camera</string>
     <string name="gallery">Gallery</string>
