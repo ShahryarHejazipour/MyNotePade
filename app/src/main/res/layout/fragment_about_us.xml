@@ -96,7 +96,9 @@
         android:layout_below="@id/txt_address"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/margin_70"
-
+        android:background="@drawable/btn_shape"
+        android:paddingRight="@dimen/radius_8"
+        android:paddingLeft="@dimen/radius_8"
         />
 
 </RelativeLayout>

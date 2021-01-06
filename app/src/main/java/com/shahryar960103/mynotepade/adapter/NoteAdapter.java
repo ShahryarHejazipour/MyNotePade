@@ -1,5 +1,6 @@
 package com.shahryar960103.mynotepade.adapter;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -55,6 +56,7 @@ public class NoteAdapter extends RecyclerView.Adapter {
         return new NoteViewHolder(binding);
     }
 
+    @SuppressLint("ResourceAsColor")
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
 
@@ -131,6 +133,11 @@ public class NoteAdapter extends RecyclerView.Adapter {
             }
         });
         runSetting();
+     /*  if (position % 2 == 0){
+            binding.cardView.setBackgroundColor(R.color.noteBack2);
+        }else {
+            binding.cardView.setBackgroundColor(R.color.noteBack2);
+        }*/
 
 
 
