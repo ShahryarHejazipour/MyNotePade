@@ -15,6 +15,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
 import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
@@ -37,6 +38,7 @@ import com.shahryar960103.mynotepade.config.Constants;
 import com.shahryar960103.mynotepade.database.NoteDataBase;
 import com.shahryar960103.mynotepade.databinding.FragmentHomeBinding;
 import com.shahryar960103.mynotepade.models.Note;
+import com.shahryar960103.mynotepade.viewmodel.NoteViewModel;
 
 
 import java.util.ArrayList;
@@ -53,6 +55,10 @@ public class HomeFragment extends Fragment {
     ActionBarDrawerToggle toggle;
 
     NoteDataBase noteDataBase;
+
+    NoteViewModel viewModel;
+
+
 
     List<Note> noteList;
     SharedPreferences sharedPreferences;
@@ -184,6 +190,20 @@ public class HomeFragment extends Fragment {
 
             }
         });
+
+
+
+       /* //MVVM Architecture
+        viewModel = new NoteViewModel();
+        Observer<Note> observer = new Observer<Note>() {
+            @Override
+            public void onChanged(Note note) {
+
+                showNotesList();
+            }
+        };
+
+        viewModel.getNoteMutableLiveData().observe(HomeFragment.this,observer);*/
 
 
         return binding.getRoot();
